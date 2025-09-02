@@ -1,9 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simple Greeting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umut Arpat - Professional Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hi</h1>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-sm p-4 md:p-6 lg:p-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Umut Arpat</h1>
+            <nav>
+                <a href="#services" class="text-gray-600 hover:text-gray-900 mx-2 md:mx-4 transition-colors">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900 mx-2 md:mx-4 transition-colors">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-16 md:py-24 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Empowering Your Vision Through Expert Solutions</h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                As a dedicated software developer, Umut Arpat offers tailored professional services designed to meet your unique needs and drive success.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-12">Our Core Competencies</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow">
+                    <div class="flex justify-center items-center h-12 w-12 rounded-full bg-gray-900 text-white mb-4 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L12 14.75m0 0l2.25 2.25m-2.25-2.25V9.75M12 12a2.25 2.25 0 11-4.5 0a2.25 2.25 0 014.5 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2 text-center">Strategic Consulting</h4>
+                    <p class="text-gray-600 text-center">
+                        Providing expert analysis and actionable strategies to optimize your operations and achieve long-term growth.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow">
+                    <div class="flex justify-center items-center h-12 w-12 rounded-full bg-gray-900 text-white mb-4 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2 text-center">Technical Implementation</h4>
+                    <p class="text-gray-600 text-center">
+                        Building robust and scalable solutions from the ground up, ensuring seamless integration and performance.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-shadow">
+                    <div class="flex justify-center items-center h-12 w-12 rounded-full bg-gray-900 text-white mb-4 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2 text-center">Project Management</h4>
+                    <p class="text-gray-600 text-center">
+                        Guiding projects from conception to completion with meticulous attention to detail and efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-8">About Umut Arpat</h3>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto text-center">
+                I am Umut Arpat, a dedicated professional committed to delivering excellence. My background is built on a foundation of rigorous problem-solving and a passion for creating impactful solutions. As a software developer, I provide personalized service and a direct, hands-on approach to every project. My goal is to partner with you, understand your challenges, and provide the strategic and technical expertise needed to turn your objectives into reality. I believe in forging strong relationships based on trust, transparency, and a shared commitment to achieving outstanding results.
+            </p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Umut Arpat. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
